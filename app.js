@@ -6,8 +6,8 @@ const logger = require('morgan');
 const axios = require('axios');
 
 const PORT = process.env.PORT || 3000;
-const ENDPOINT = process.env.ENDPOINT;
-const ENDPOINT_KEY = process.env.ENDPOINT_KEY;
+const ENDPOINT = process.env.ENDPOINT || "";
+const ENDPOINT_KEY = process.env.ENDPOINT_KEY \\ "";
 
 const app = express();
 
